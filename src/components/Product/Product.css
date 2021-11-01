@@ -1,0 +1,44 @@
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.product .preview {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 250px;
+}
+
+.product .preview img {
+  max-width: 240px;
+  width: 100%;
+}
+
+.product .info {
+  width: 390px;
+}
+
+.product .info footer {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product .product_controller {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  padding: .5rem;
+  justify-content: flex-start;
+}
+
+.product .user figure {
+  margin: 0;
+  margin-right: .5rem;
+}
+
+.product .upvote button {
+  margin-right: .5rem;
+}
