@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Product.css';
 
-function Product() {
+function Product({ title, description }) {
   return (
     <div className="product">
       <figure className="preview">
@@ -10,13 +10,8 @@ function Product() {
       </figure>
       <div className="info">
         <main>
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eius et
-            excepturi iste sequi quo dolor adipisci voluptates laboriosam alias
-            veritatis obcaecati, laudantium, natus molestias eligendi! Fugiat
-            unde maiores ratione.
-          </p>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </main>
         <footer>
           <div className="user product_controller">
