@@ -3,3 +3,8 @@
 body {
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
+
+.product-list {
+  margin: 0 auto;
+  width: 50%;
+}

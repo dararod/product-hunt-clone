@@ -1,6 +1,12 @@
 .product {
+  border-bottom: 2px solid #323232;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.product:last-child {
+  border-bottom: none;
 }
 
 .product .preview {
@@ -12,8 +18,7 @@
 }
 
 .product .preview img {
-  max-width: 240px;
-  width: 100%;
+  height: 150px;
 }
 
 .product .info {
@@ -32,13 +37,21 @@
   display: flex;
   padding: .5rem;
   justify-content: flex-start;
+  width: 170px;
 }
 
 .product .user figure {
+  border-radius: 100px;
+  height: 40px;
   margin: 0;
   margin-right: .5rem;
+  overflow: hidden;
+  width: 40px;
 }
 
 .product .upvote button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
   margin-right: .5rem;
 }

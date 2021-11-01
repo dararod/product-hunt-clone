@@ -6,3 +6,4 @@ temp
 # Files
 .DS_Store
 .vscode
+yarn.lock
