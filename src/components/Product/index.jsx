@@ -3,6 +3,7 @@ import React from 'react';
 import './Product.css';
 
 function Product({
+  id,
   title,
   description,
   imageUrl,
@@ -10,7 +11,10 @@ function Product({
   avatar,
   upvotes,
   downvotes,
+  upvoteProduct,
 }) {
+  const handleUpvote = () => upvoteProduct(id);
+
   return (
     <li className="product">
       <figure className="preview">
@@ -29,7 +33,7 @@ function Product({
             <span className="username">{username}</span>
           </div>
           <div className="upvote product_controller">
-            <button>
+            <button onClick={handleUpvote}>
               <svg
                 width="16"
                 height="16"

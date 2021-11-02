@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  width: 100%;
+  max-width: 700px;
 }
 
 .product:last-child {
@@ -14,11 +16,12 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  margin-right: 2rem;
   width: 250px;
 }
 
 .product .preview img {
-  height: 150px;
+  height: 100px;
 }
 
 .product .info {
