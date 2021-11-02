@@ -1,0 +1,10 @@
+#application-footer {
+    text-align: center;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  
+  #application-footer small {
+    color: #FFFFFF;
+  }

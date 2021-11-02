@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './components/Header';
 import Product from './components/Product';
+import Footer from './components/Footer';
 
 import database from './database.json';
 import './App.css';
@@ -20,10 +21,12 @@ function App() {
               username={product.user.username}
               avatar={product.user.avatar}
               upvotes={product.upvotes}
+              downvotes={product.downvotes}
             />
           ))}
         </ul>
       </main>
+      <Footer />
     </>
   );
 }

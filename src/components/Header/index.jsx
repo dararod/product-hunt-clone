@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Header.css';
 
-function Header({ title, description, imageUrl, username, avatar, upvotes }) {
+function Header() {
   return (
     <header id="application-header">
       <h1>DeveloperBreakfast</h1>
