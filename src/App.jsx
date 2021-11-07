@@ -22,6 +22,17 @@ function App() {
     setProductsList(productListClone);
   };
 
+  const downvoteProduct = (id) => {
+    const productListClone = [...productsList];
+    const elementIndex = productListClone.findIndex((el) => el.id === id);
+
+    productListClone[elementIndex] = {
+      ...productListClone[elementIndex],
+      downvotes: productListClone[elementIndex].downvotes + 1,
+    };
+
+    setProductsList(productListClone);
+  };
   return (
     <>
       <Header />
@@ -38,6 +49,7 @@ function App() {
               upvotes={product.upvotes}
               downvotes={product.downvotes}
               upvoteProduct={upvoteProduct}
+              downvoteProduct={downvoteProduct}
             />
           ))}
         </ul>

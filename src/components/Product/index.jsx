@@ -12,8 +12,10 @@ function Product({
   upvotes,
   downvotes,
   upvoteProduct,
+  downvoteProduct,
 }) {
   const handleUpvote = () => upvoteProduct(id);
+  const handleDownvote = () => downvoteProduct(id);
 
   return (
     <li className="product">
@@ -49,7 +51,7 @@ function Product({
             <span>{upvotes}</span>
           </div>
           <div className="upvote product_controller">
-            <button>
+            <button onClick={handleDownvote}>
               <svg
                 width="16"
                 height="16"
