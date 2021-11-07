@@ -15,6 +15,15 @@ function App() {
     };
     setProductsList(productListClone);
   };
+  const downvoteProduct = (id) => {
+    const productListClone = [...productsList];
+    const elementIndex = productListClone.findIndex((el) => el.id === id);
+    productListClone[elementIndex] = {
+      ...productListClone[elementIndex],
+      downvotes: productListClone[elementIndex].downvotes + 1
+    };
+    setProductsList(productListClone);
+  };
   return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Header, null), /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement("ul", {
     className: "product-list"
   }, productsList.map((product) => /* @__PURE__ */ React.createElement(Product, {
@@ -26,7 +35,8 @@ function App() {
     avatar: product.user.avatar,
     upvotes: product.upvotes,
     downvotes: product.downvotes,
-    upvoteProduct
+    upvoteProduct,
+    downvoteProduct
   })))), /* @__PURE__ */ React.createElement(Footer, null));
 }
 export default App;
