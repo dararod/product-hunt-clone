@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Product from './components/Product';
 import Footer from './components/Footer';
+import data from './data';
 
-import database from './database.json';
 import './App.css';
 
 function App() {
-  const [productsList, setProductsList] = useState(database);
+  const [productsList, setProductsList] = useState(data);
 
   const upvoteProduct = (id) => {
     const productListClone = [...productsList];
