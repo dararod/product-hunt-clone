@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/product-hunt-clone/static/css/main.d602cd94.chunk.css",
+    "main.js": "/product-hunt-clone/static/js/main.42842911.chunk.js",
+    "main.js.map": "/product-hunt-clone/static/js/main.42842911.chunk.js.map",
+    "runtime-main.js": "/product-hunt-clone/static/js/runtime-main.d44bb7a0.js",
+    "runtime-main.js.map": "/product-hunt-clone/static/js/runtime-main.d44bb7a0.js.map",
+    "static/js/2.611b6618.chunk.js": "/product-hunt-clone/static/js/2.611b6618.chunk.js",
+    "static/js/2.611b6618.chunk.js.map": "/product-hunt-clone/static/js/2.611b6618.chunk.js.map",
+    "index.html": "/product-hunt-clone/index.html",
+    "static/css/main.d602cd94.chunk.css.map": "/product-hunt-clone/static/css/main.d602cd94.chunk.css.map",
+    "static/js/2.611b6618.chunk.js.LICENSE.txt": "/product-hunt-clone/static/js/2.611b6618.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d44bb7a0.js",
+    "static/js/2.611b6618.chunk.js",
+    "static/css/main.d602cd94.chunk.css",
+    "static/js/main.42842911.chunk.js"
+  ]
+}
