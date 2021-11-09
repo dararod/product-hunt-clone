@@ -1,23 +1,34 @@
 {
-  "name": "snowpack-react",
-  "license": "MIT",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build --public-url ./",
-    "fmt": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx}\""
-  },
+  "name": "product-hunt-clone",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://developerbreakfast.github.io/product-hunt-clone",
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "parcel": "^2.0.1",
-    "prettier": "^2.2.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
