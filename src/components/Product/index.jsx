@@ -20,7 +20,7 @@ function Product({
   return (
     <li className="product">
       <figure className="preview">
-        <img src={imageUrl} alt={`${title} sample image`} />
+        <img src={imageUrl} alt={`${title} sample`} />
       </figure>
       <div className="info">
         <main>
